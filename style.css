@@ -1,0 +1,106 @@
+
+body {
+   background: hsl(240deg 9% 13%);
+   background: linear-gradient(45deg, hsl(240deg 10% 15%), hsl(240deg 17% 24%));
+   color: white;
+ }
+
+ #main_container{
+   max-width: 50em;
+ }
+
+ h6{
+   font-size: 0.9rem;
+   color: #b5b5c9;
+ }
+
+
+ .card{
+   background-color: rgb(30 30 42);
+   border: none;
+   border-radius: 17px;
+   box-shadow: 1px 13px 10px 4px #0000001a;
+ }
+
+
+.chart_container{
+   position: relative; 
+   height:20rem; 
+}
+
+.refresh-button {
+   border: 1px solid rgb(56, 55, 65);
+}
+
+.refresh-button:hover {
+   border: 1px solid rgb(56, 55, 65);
+   background-color:  rgb(53, 53, 62);
+}
+
+
+/* CHART */
+
+
+.chart-settings{
+   font-size: 0.6rem;
+}
+
+.chart-settings ul li{
+   text-align: center;
+   width: 2.3rem;
+}
+.chart-settings ul li:hover{
+   cursor: pointer;
+   background-color: #3f3f54;
+   border-radius: var(--bs-border-radius-pill)!important;
+
+}
+
+
+.chart-settings ul li.active{
+   color: #000!important;
+   background-color: RGBA(248,249,250,var(--bs-bg-opacity,1))!important;
+   border-radius: var(--bs-border-radius-pill)!important;
+}
+
+/* BATTERY STATS */
+
+
+#battery-stats>p:last-child{
+   font-size: 0.8rem;
+}
+
+
+
+/* GAUGE */
+
+.gauge-container {
+   width: 80%;
+   /* height: 150px; */
+   /* display: block; */
+   float: right;
+   position: relative;
+ }
+
+ .gauge-container > .gauge .dial {
+   fill: rgba(0,0,0,0);
+   stroke: #334455;
+   stroke-width: 4;
+ }
+ .gauge-container > .gauge .value {
+   fill: rgba(0,0,0,0);
+   stroke: #3eb8ff;
+   /* stroke: #bdffbe; */
+   stroke-dasharray: 3 1;
+   stroke-width: 8;
+ }
+ .gauge-container > .gauge .value-text {
+   font-family: sans-serif;
+   font-weight: bold;
+   fill: #3eb8ff;
+   font-size: 0.7em;
+ }
+
+
+
+
